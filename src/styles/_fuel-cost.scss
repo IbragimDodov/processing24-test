@@ -1,0 +1,30 @@
+.fuel-cost {
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th {
+      text-align: left;
+      padding: 19px 0 21px 30px;
+      background: #043c77;
+
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 16px;
+      color: #ffffff;
+
+      &:first-child {
+        padding-left: 20px;
+      }
+    }
+    td {
+      border: 1px solid black;
+      text-align: left;
+      padding: 16px 0 16px 30px;
+
+      &:first-child {
+        padding-left: 20px;
+      }
+    }
+  }
+}

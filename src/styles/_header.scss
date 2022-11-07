@@ -8,6 +8,10 @@
     padding-bottom: 16px;
   }
 
+  &__logo {
+    cursor: pointer;
+  }
+
   &__contacts {
     display: flex;
     align-items: center;
@@ -60,6 +64,7 @@
       &-item {
         display: flex;
         align-items: center;
+        cursor: pointer;
 
         img {
           margin-left: 10px;
