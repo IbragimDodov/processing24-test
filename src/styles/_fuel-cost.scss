@@ -1,7 +1,15 @@
 .fuel-cost {
+  h2 {
+    margin-bottom: 48px;
+  }
   table {
     width: 100%;
     border-collapse: collapse;
+
+    thead {
+      border: 1px solid #043c77;
+      border-bottom: none;
+    }
 
     th {
       text-align: left;
@@ -18,13 +26,39 @@
       }
     }
     td {
-      border: 1px solid black;
       text-align: left;
       padding: 16px 0 16px 30px;
 
-      &:first-child {
-        padding-left: 20px;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 16px;
+
+      border-bottom: 1px solid #e7e7e7;
+      border-top: 1px solid #e7e7e7;
+
+      &:last-child {
+        border-right: 1px solid #e7e7e7;
       }
     }
   }
+}
+
+.td-title-style {
+  padding-left: 20px;
+  background: #098fcf;
+  font-weight: 700 !important;
+  font-size: 24px !important;
+  line-height: 29px !important;
+  color: #ffffff !important;
+  border-left: 1px solid #098fcf !important;
+  width: 163px;
+}
+
+.bl {
+  border-left: 1px solid #e7e7e7;
+}
+
+.table-middle {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }

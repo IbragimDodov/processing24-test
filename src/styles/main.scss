@@ -68,6 +68,30 @@ section {
   }
 }
 
+.vt {
+  vertical-align: text-top;
+}
+
+.ordinary-label {
+  display: flex;
+  flex-direction: column;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  cursor: pointer;
+
+  input,
+  select {
+    background: #ffffff;
+    border: 1px solid #d5d5d5;
+
+    padding: 13px 0 16px 15px;
+    margin-top: 8px;
+  }
+}
+
 @import "header.scss";
 @import "fuel.scss";
 @import "fuel-cost.scss";
+@import "fuel-delivery.scss";

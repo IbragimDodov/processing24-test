@@ -61,11 +61,11 @@
           <form class="form fuel__form">
             <div class="fuel__form-inner">
               <div class="fuel__form-inputs-block">
-                <label> Ваше имя
-                  <input type="text" placeholder="Иван">
+                <label class="ordinary-label"> Ваше имя
+                  <input class="ordinary-input" type="text" placeholder="Иван">
                 </label>
-                <label> Номер телефона
-                  <input type="tel" placeholder="+7 (___) ___-__-__">
+                <label class="ordinary-label"> Номер телефона
+                  <input class="ordinary-input" type="tel" placeholder="+7 (___) ___-__-__">
                 </label>
               </div>
               <button class="btn fuel__form-btn">Заказать топливо</button>
@@ -77,120 +77,162 @@
         </div>
       </div>
     </section>
+
     <section class="fuel-cost">
       <div class="container">
         <h2 class="sections-subtitle">
           Стоимость топлива
         </h2>
 
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Сорт топлива</th>
-              <th>Экологический класс</th>
-              <th>Производитель</th>
-              <th>Наличный расчет</th>
-              <th>Безналичный расчет</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>ДТ</td>
-              <td>ЕВРО-5</td>
-              <td>Газпромнефть</td>
-              <td>45.43 р.</td>
-              <td>44.43 р.</td>
-            </tr>
-            <tr>
-              <td>ДТ</td>
-              <td>ЕВРО-5</td>
-              <td>Лукойл</td>
-              <td>45.16 р.</td>
-              <td>43.98 р.</td>
-            </tr>
-            <tr>
-              <td>ДТ</td>
-              <td>ЕВРО-5</td>
-              <td>Роснефть</td>
-              <td>42.34 р.</td>
-              <td>41.64 р.</td>
-            </tr>
-            <tr>
-              <td>ДТ</td>
-              <td>ЕВРО-4</td>
-              <td>Газпромнефть</td>
-              <td>-</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>ДТ</td>
-              <td>ЕВРО-4</td>
-              <td>Лукойл</td>
-              <td>41.16 р.</td>
-              <td>40.67 р.</td>
-            </tr>
+        <div class="table-wrap">
+          <table class="table-top">
+            <thead>
+              <tr>
+                <th>Сорт топлива</th>
+                <th>Экологический класс</th>
+                <th>Производитель</th>
+                <th>Наличный расчет</th>
+                <th>Безналичный расчет</th>
+              </tr>
+            </thead>
+          </table>
 
+          <table class="table-middle">
+            <tbody>
+              <tr>
+                <td rowspan="5" class="td-title-style">ДТ</td>
+                <td rowspan="3" class="vt">ЕВРО-5</td>
+                <td class="bl">Газпромнефть</td>
+                <td>45.43 р.</td>
+                <td>44.43 р.</td>
+              </tr>
+              <tr>
+                <!-- <td>ДТ</td> -->
+                <!-- <td>ЕВРО-5</td> -->
+                <td class="bl">Лукойл</td>
+                <td>45.16 р.</td>
+                <td>43.98 р.</td>
+              </tr>
+              <tr>
+                <!-- <td>ДТ</td> -->
+                <!-- <td>ЕВРО-5</td> -->
+                <td class="bl">Роснефть</td>
+                <td>42.34 р.</td>
+                <td>41.64 р.</td>
+              </tr>
+              <tr>
+                <!-- <td>ДТ</td> -->
+                <td rowspan="2" class="vt">ЕВРО-4</td>
+                <td class="bl">Газпромнефть</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <!-- <td>ДТ</td> -->
+                <!-- <td>ЕВРО-4</td> -->
+                <td class="bl">Лукойл</td>
+                <td>41.16 р.</td>
+                <td>40.67 р.</td>
+              </tr>
+            </tbody>
+          </table>
 
+          <table class="table-bottom">
+            <tbody>
+              <tr>
+                <td rowspan="8" class="td-title-style">АИ-95</td>
+                <td rowspan="3" class="vt">ЕВРО-5</td>
+                <td class="bl">Газпромнефть</td>
+                <td>45.43 р.</td>
+                <td>44.43 р.</td>
+              </tr>
+              <tr>
+                <!-- <td>АИ-95</td> -->
+                <!-- <td>ЕВРО-5</td> -->
+                <td class="bl">Роснефть</td>
+                <td>42.34 р.</td>
+                <td>41.64 р.</td>
+              </tr>
+              <tr>
+                <!-- <td>АИ-95</td> -->
+                <!-- <td>ЕВРО-5</td> -->
+                <td class="bl">Лукойл</td>
+                <td>45.16 р.</td>
+                <td>43.98 р.</td>
+              </tr>
+              <tr>
+                <!-- <td>АИ-95</td> -->
+                <td rowspan="2" class="vt">ЕВРО-4</td>
+                <td class="bl">Лукойл</td>
+                <td>41.16 р.</td>
+                <td>40.67 р.</td>
+              </tr>
+              <tr>
+                <!-- <td>АИ-95</td> -->
+                <!-- <td>ЕВРО-4</td> -->
+                <td class="bl">Газпромнефть</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <!-- <td>АИ-95</td> -->
+                <td rowspan="3" class="vt">ЕВРО-3</td>
+                <td class="bl">Роснефть</td>
+                <td>42.34 р.</td>
+                <td>41.64 р.</td>
+              </tr>
+              <tr>
+                <!-- <td>АИ-95</td> -->
+                <!-- <td>ЕВРО-3</td> -->
+                <td class="bl">Газпромнефть</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <!-- <td>АИ-95</td> -->
+                <!-- <td>ЕВРО-3</td> -->
+                <td class="bl">Лукойл</td>
+                <td>45.16 р.</td>
+                <td>43.98 р.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
+      
+      </div>
+    </section>
 
-            <tr>
-              <td>АИ-95</td>
-              <td>ЕВРО-5</td>
-              <td>Газпромнефть</td>
-              <td>45.43 р.</td>
-              <td>44.43 р.</td>
-            </tr>
-            <tr>
-              <td>АИ-95</td>
-              <td>ЕВРО-5</td>
-              <td>Роснефть</td>
-              <td>42.34 р.</td>
-              <td>41.64 р.</td>
-            </tr>
-            <tr>
-              <td>АИ-95</td>
-              <td>ЕВРО-5</td>
-              <td>Лукойл</td>
-              <td>45.16 р.</td>
-              <td>43.98 р.</td>
-            </tr>
-            <tr>
-              <td>АИ-95</td>
-              <td>ЕВРО-4</td>
-              <td>Лукойл</td>
-              <td>41.16 р.</td>
-              <td>40.67 р.</td>
-            </tr>
-            <tr>
-              <td>АИ-95</td>
-              <td>ЕВРО-4</td>
-              <td>Газпромнефть</td>
-              <td>-</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>АИ-95</td>
-              <td>ЕВРО-3</td>
-              <td>Роснефть</td>
-              <td>42.34 р.</td>
-              <td>41.64 р.</td>
-            </tr>
-            <tr>
-              <td>АИ-95</td>
-              <td>ЕВРО-3</td>
-              <td>Газпромнефть</td>
-              <td>-</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>АИ-95</td>
-              <td>ЕВРО-3</td>
-              <td>Лукойл</td>
-              <td>45.16 р.</td>
-              <td>43.98 р.</td>
-            </tr>
-          </tbody>
-        </table>
+    <section class="fuel-delivery">
+      <div class="container">
+        <h2 class="sections-subtitle">
+          Топливо с доставкой
+        </h2>
+
+        <div class="fuel-delivery__inner">
+          <form action="" class="fuel-delivery__form">
+            <label class="ordinary-label"> Вид топлива
+              <select name="select-category">
+                <option value="1">ДТ</option>
+                <option value="2">АИ-95</option>
+              </select>
+            </label>
+            <label class="ordinary-label"> Номер телефона
+              <input class="ordinary-input" type="tel" placeholder="+7 (___) ___-__-__">
+            </label>
+            <label class="ordinary-label"> Ваше имя
+              <input class="ordinary-input" type="text" placeholder="Иван">
+            </label>
+            <label class="ordinary-label"> Номер телефона
+              <input class="ordinary-input" type="tel" placeholder="+7 (___) ___-__-__">
+            </label>
+            <label class="ordinary-label"> Ваше имя
+              <input class="ordinary-input" type="text" placeholder="Иван">
+            </label>
+          </form>
+          <div class="fuel-delivery__total"></div>
+        </div>
+
       </div>
     </section>
   </main>
