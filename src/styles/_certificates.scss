@@ -1,0 +1,19 @@
+.certificates {
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 36px;
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    column-gap: 31px;
+  }
+
+  &__item {
+    padding: 28px 20px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+  }
+}

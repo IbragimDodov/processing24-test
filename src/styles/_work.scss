@@ -1,0 +1,64 @@
+.work {
+  h2 {
+    margin-bottom: 48px;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    column-gap: 31px;
+  }
+
+  &__item {
+    width: 33.333%;
+    height: 394px;
+    padding: 30px;
+    background: #043c77;
+
+    &-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      span {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+        color: #ffffff;
+        padding-bottom: 31px;
+      }
+
+      .arrow {
+        position: relative;
+
+        &::after {
+          content: url("../../dist/img/work/work-arrow.svg");
+          width: 100%;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+        }
+      }
+    }
+
+    &-descr {
+      margin-top: 30px;
+      h4 {
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 26px;
+        color: #ffffff;
+        margin-bottom: 24px;
+      }
+
+      p {
+        line-height: 140%;
+        color: #ffffff;
+      }
+
+      .small-descr {
+        font-size: 12px;
+        margin-top: 20px;
+      }
+    }
+  }
+}

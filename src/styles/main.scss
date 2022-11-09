@@ -91,7 +91,24 @@ section {
   }
 }
 
+.slider__buttons {
+  button {
+    background-color: transparent;
+    border: 1px solid #d5d5d5;
+    margin-right: 16px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
 @import "header.scss";
 @import "fuel.scss";
 @import "fuel-cost.scss";
 @import "fuel-delivery.scss";
+@import "work.scss";
+@import "service.scss";
+@import "certificates.scss";
+@import "partners.scss";
+@import "reviews.scss";
+@import "footer.scss";

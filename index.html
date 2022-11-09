@@ -210,33 +210,309 @@
         </h2>
 
         <div class="fuel-delivery__inner">
-          <form action="" class="fuel-delivery__form">
+          <form class="fuel-delivery__form">
             <label class="ordinary-label"> Вид топлива
               <select name="select-category">
                 <option value="1">ДТ</option>
                 <option value="2">АИ-95</option>
               </select>
             </label>
-            <label class="ordinary-label"> Номер телефона
-              <input class="ordinary-input" type="tel" placeholder="+7 (___) ___-__-__">
+            <label class="ordinary-label"> Объем топлива
+              <input class="ordinary-input" type="text" placeholder="1670 литров">
+            </label>
+            <label class="ordinary-label"> Место доставки
+              <input class="ordinary-input" type="text" placeholder="Укажите место">
             </label>
             <label class="ordinary-label"> Ваше имя
               <input class="ordinary-input" type="text" placeholder="Иван">
             </label>
             <label class="ordinary-label"> Номер телефона
               <input class="ordinary-input" type="tel" placeholder="+7 (___) ___-__-__">
-            </label>
-            <label class="ordinary-label"> Ваше имя
-              <input class="ordinary-input" type="text" placeholder="Иван">
             </label>
           </form>
-          <div class="fuel-delivery__total"></div>
+          <div class="fuel-delivery__total total">
+            <h3 class="total__title">Итого</h3>
+
+            <div class="total__inner">
+              <div class="total__fuel-cost">
+                <p>Стоимость топлива</p>
+                <span>77 350.00 ₽</span>
+              </div>
+              <div class="total__fuel-price">
+                <div class="total__price">
+                  <p>Цена за литр:</p>
+                  <span>45.50 ₽</span>
+                </div>
+                <p class="total__price-descr">Цена и стоимость указаны ориентировочно. <br> 
+                  Точные цену и стоимость собщит наш менеджер при подтверждении заявки.</p>
+              </div>
+              <div class="total__fuel-benefit">
+                <div class="total__benefit">
+                  <p>Выгода:</p>
+                  <span>6 953.00 ₽</span>
+                </div>
+                <p class="total__benefit-descr">При цене на АЗС  49.59 ₽  за литр, цены актуальны на  23.11.2020 г. </p>
+              </div>
+            </div>
+
+            <button class="btn total__btn">Заказать топливо</button>
+          </div>
         </div>
 
       </div>
     </section>
+
+    <section class="work">
+      <div class="container">
+        <h2 class="sections-subtitle">Как мы работаем</h2>
+        <div class="work__inner">
+          <div class="work__item">
+            <div class="work__item-top">
+              <img src="./dist/img/work/icon-1.svg" alt="icon">
+              <span class="arrow">1-3 мин.</span>
+            </div>
+            <div class="work__item-descr">
+              <h4>Оформление заявки</h4>
+              <p>Заполните заявку на сайте, укажите удобное для вас место приезда заправщика, сорт и количество топлива, которое хотите купить</p>
+            </div>
+          </div>
+          <div class="work__item">
+            <div class="work__item-top">
+              <img src="./dist/img/work/icon-2.svg" alt="icon">
+              <span class="arrow">1-3 мин.</span>
+            </div>
+            <div class="work__item-descr">
+              <h4>Подтверждение заявки менеджером</h4>
+              <p>Дождитесь звонка нашего менеджера для уточнения условий заказа</p>
+            </div>
+          </div>
+          <div class="work__item">
+            <div class="work__item-top">
+              <img src="./dist/img/work/icon-3.svg" alt="icon">
+              <span>30-90 мин.</span>
+            </div>
+            <div class="work__item-descr">
+              <h4>Заправка вашего автомобиля</h4>
+              <p>В назначенное время приедет заправщик и заправит автомобиль топливом.</p>
+
+              <p class="small-descr">Если у заказчика есть действующий договор на топливные карты, то при оплате можно провести транзакцию через терминал. Переносное устройство есть у каждого заправщика</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="service">
+      <div class="container">
+        <h2 class="sections-subtitle">Преимущества сервиса</h2>
+        <div class="service__inner">
+          <div class="service__item">
+            <img src="./dist/img/service/icon-1.svg" alt="icon">
+            <div class="service__item-descr">
+              <h5>Качество топлива</h5>
+              <p>Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu, purus ac nisi sit eget sed et, adipiscing felis.</p>
+            </div>
+          </div>
+          <div class="service__item">
+            <img src="./dist/img/service/icon-2.svg" alt="icon">
+            <div class="service__item-descr">
+              <h5>Бережем ваше время и нервы</h5>
+              <p>Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu, purus ac nisi sit eget sed et, adipiscing felis.</p>
+            </div>
+          </div>
+          <div class="service__item">
+            <img src="./dist/img/service/icon-3.svg" alt="icon">
+            <div class="service__item-descr">
+              <h5>Цена</h5>
+              <p>Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu, purus ac nisi sit eget sed et, adipiscing felis.</p>
+            </div>
+          </div>
+          <div class="service__item">
+            <img src="./dist/img/service/icon-4.svg" alt="icon">
+            <div class="service__item-descr">
+              <h5>Ваш комфорт—наша забота</h5>
+              <p>Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu, purus ac nisi sit eget sed et, adipiscing felis.</p>
+            </div>
+          </div>
+          <div class="service__item">
+            <img src="./dist/img/service/icon-5.svg" alt="icon">
+            <div class="service__item-descr">
+              <h5>Безопасность процесса</h5>
+              <p>Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu, purus ac nisi sit eget sed et, adipiscing felis.</p>
+            </div>
+          </div>
+          <div class="service__item">
+            <img src="./dist/img/service/icon-6.svg" alt="icon">
+            <div class="service__item-descr">
+              <h5>Несколько ТС в одном месте?</h5>
+              <p>Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu, purus ac nisi sit eget sed et, adipiscing felis.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="certificates">
+      <div class="container">
+        <div class="certificates__inner">
+          <div class="certificates__top">
+            <h2 class="sections-subtitle">Преимущества сервиса</h2>
+            <div class="certificates__buttons slider__buttons">
+              <button>
+                <img src="./dist/img/icons/arrow-prev.svg" alt="arrow-prev">
+              </button>
+              <button>
+                <img src="./dist/img/icons/arrow-next.svg" alt="arrow-next">
+              </button>
+            </div>
+          </div>
+          <div class="certificates__bottom">
+            <div class="certificates__item">
+              <img src="./dist/img/certificates/image-1.png" alt="sertificate">
+            </div>
+            <div class="certificates__item">
+              <img src="./dist/img/certificates/image-2.png" alt="sertificate">
+            </div>
+            <div class="certificates__item">
+              <img src="./dist/img/certificates/image-3.png" alt="sertificate">
+            </div>
+            <div class="certificates__item">
+              <img src="./dist/img/certificates/image-4.png" alt="sertificate">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="partners">
+      <div class="container">
+        <h2 class="sections-subtitle">Наши партнеры</h2>
+        <div class="partners__inner">
+          <div class="partners__items">
+            <img src="./dist/img/partners/lukoil.png" alt="partner">
+            <img src="./dist/img/partners/gazprom.png" alt="partner">
+            <img src="./dist/img/partners/rosneft.png" alt="partner">
+            <img src="./dist/img/partners/tatneft.png" alt="partner">
+          </div>
+          <div class="partners__dots">
+            <span class="active-dot"></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="container">
+        <div class="reviews__inner">
+          <div class="reviews__top">
+            <h2 class="sections-subtitle">Отзывы</h2>
+            <div class="reviews__buttons slider__buttons">
+              <button>
+                <img src="./dist/img/icons/arrow-prev.svg" alt="arrow-prev">
+              </button>
+              <button>
+                <img src="./dist/img/icons/arrow-next.svg" alt="arrow-next">
+              </button>
+            </div>
+          </div>
+          <div class="reviews__body">
+            <div class="reviews__item person">
+              <div class="person__about">
+                <span class="person__name">Гусев Вячеслав</span>
+                <span class="person__company">Индивидуальный предприниматель</span>
+                <p class="person__comment">Velit, lectus sit urna tincidunt augue. Cursus vulputate pellentesque faucibus euismod. Diam pharetra, non, ut integer dui feugiat porttitor at. Non, dignissim enim viverra fringilla sit. Etiam justo a dignissim sociis vitae, nisi, justo, feugiat.</p>
+              </div>
+              <a class="person__descr" href="#">Подробнее</a>
+            </div>
+            <div class="reviews__item person">
+              <div class="person__about">
+                <span class="person__name">Зеленов Евгений</span>
+                <span class="person__company">Гененеральный директор трансопртной компании</span>
+                <p class="person__comment">Mi auctor sit habitasse sed mi cras ullamcorper massa sed. In augue fames sodales pretium, at scelerisque. Pulvinar a mattis pharetra mi, aliquet sem tristique lorem eleifend. Nisl, scelerisque ut libero, pellentesque. Tincidunt vestibulum volutpat lacus imperdiet morbi vulputate tristique facilisi.</p>
+              </div>
+              <a class="person__descr" href="#">Подробнее</a>
+            </div>
+          </div>
+          <button class="reviews__btn btn">Читать все отзывы</button>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer class="footer"></footer>
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="container">
+        <div class="footer__top-inner">
+          <h2 class="footer__subtitle sections-subtitle">
+            Остались вопросы? 
+          </h2>
+          <span>Готовы ответить на любой Ваш вопрос. Оставьте свой номер телефона и мы свяжемся с вами в ближайшее время</span>
+          <form class="form footer__form">
+            <div class="footer__form-inner">
+              <input class="footer__form-input" type="text" placeholder="Ваше имя">
+              <input class="footer__form-input" type="tel" placeholder="Номер телефона">
+              <button class="btn footer__form-btn">Перезвоните мне</button>
+            </div>
+            <p>Нажимая на кнопку "Перезвоните мне" я соглашаюсь с
+              <a href="#">Политикой конфиденциальности</a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <div class="footer__bottom-inner">
+          <div class="footer__bottom-item">
+            <img class="footer__logo" src="./dist/img/logo.png" alt="logo">
+            <p class="footer__logo-text">© 2019 ООО "Процессинг24"</p>
+          </div>
+          <div class="footer__bottom-item footer__nav">
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Карта АЗС</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">АЗС по регионам</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">АЗС по брендам</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Доставка топлива</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Контакты</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">О компании</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Личный кабинет</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__bottom-item footer__phone-block">
+            <p class="footer__sale">Отдел продаж</p>
+            <a class="footer__sale-tel" href="tel:84951278170" class="footer__number">
+              8 (495) 127-81-70</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__sticky">
+      <div class="container">
+        <div class="footer__sticky-inner">
+          <a href="#">Политика конфиденциальности</a>
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M0 128c0-35.35 28.65-64 64-64h384c35.3 0 64 28.65 64 64v256c0 35.3-28.7 64-64 64H64c-35.35 0-64-28.7-64-64V128zm48 0v22.1l172.5 141.6c20.6 17 50.4 17 71 0L464 150.1v-23c0-7.9-7.2-16-16-16H64c-8.84 0-16 8.1-16 16v.9zm0 84.2V384c0 8.8 7.16 16 16 16h384c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.6 31.5-132.9 0L48 212.2z"/></svg>
+            Отправьте нам сообщение 
+            <img src="./dist/img/icons/jivo.svg" alt="jivo">
+          </button>
+        </div>
+      </div>
+    </div>
+  </footer>
   <script src="dist/js/main.min.js"></script>
 </body>
 </html>
