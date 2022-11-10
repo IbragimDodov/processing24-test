@@ -16,4 +16,33 @@
     padding: 28px 20px;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
   }
+
+  .slick-prev {
+    position: absolute;
+    top: -76px;
+    right: 53px;
+  }
+  .slick-next {
+    position: absolute;
+    top: -76px;
+    right: 0;
+  }
+
+  .slick-initialized .slick-slide {
+    justify-content: center;
+    display: flex;
+
+    background: #ffffff;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .slick-slider .slick-track,
+  .slick-slider .slick-list {
+    height: 100%;
+    display: flex;
+    column-gap: 31px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-between;
+  }
 }

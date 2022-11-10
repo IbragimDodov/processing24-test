@@ -26,6 +26,30 @@
     padding: 14px 63px 16px 64px;
     margin-top: 44px;
   }
+
+  .slick-prev {
+    position: absolute;
+    top: -87px;
+    right: 53px;
+  }
+  .slick-next {
+    position: absolute;
+    top: -87px;
+    right: 0;
+  }
+
+  .slick-initialized .slick-slide {
+    justify-content: center;
+    display: flex;
+  }
+
+  .slick-slider .slick-track,
+  .slick-slider .slick-list {
+    height: 100%;
+    display: flex;
+    column-gap: 30px;
+    justify-content: space-between;
+  }
 }
 
 .person {

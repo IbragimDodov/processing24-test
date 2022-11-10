@@ -102,3 +102,12 @@
     padding: 14px 67px 16px 68px;
   }
 }
+
+.range-slider {
+  width: 100%;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  position: relative;
+  top: -2px;
+}

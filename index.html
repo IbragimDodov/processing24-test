@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" href="dist/css/main.min.css">
 
   <title>Processing24</title>
@@ -218,7 +219,8 @@
               </select>
             </label>
             <label class="ordinary-label"> Объем топлива
-              <input class="ordinary-input" type="text" placeholder="1670 литров">
+              <input id="range-output-input" class="ordinary-input" value="0" type="text" placeholder="1670 литров">
+              <input type="range" min="1" max="5000" value="0 литров" class="range-slider" id="myRange">
             </label>
             <label class="ordinary-label"> Место доставки
               <input class="ordinary-input" type="text" placeholder="Укажите место">
@@ -358,15 +360,27 @@
           <div class="certificates__top">
             <h2 class="sections-subtitle">Преимущества сервиса</h2>
             <div class="certificates__buttons slider__buttons">
-              <button>
+              <!-- <button type="button" class="slick-prev">
                 <img src="./dist/img/icons/arrow-prev.svg" alt="arrow-prev">
               </button>
-              <button>
+              <button type="button" class="slick-next">
                 <img src="./dist/img/icons/arrow-next.svg" alt="arrow-next">
-              </button>
+              </button> -->
             </div>
           </div>
           <div class="certificates__bottom">
+            <div class="certificates__item">
+              <img src="./dist/img/certificates/image-1.png" alt="sertificate">
+            </div>
+            <div class="certificates__item">
+              <img src="./dist/img/certificates/image-2.png" alt="sertificate">
+            </div>
+            <div class="certificates__item">
+              <img src="./dist/img/certificates/image-3.png" alt="sertificate">
+            </div>
+            <div class="certificates__item">
+              <img src="./dist/img/certificates/image-4.png" alt="sertificate">
+            </div>
             <div class="certificates__item">
               <img src="./dist/img/certificates/image-1.png" alt="sertificate">
             </div>
@@ -389,15 +403,30 @@
         <h2 class="sections-subtitle">Наши партнеры</h2>
         <div class="partners__inner">
           <div class="partners__items">
-            <img src="./dist/img/partners/lukoil.png" alt="partner">
-            <img src="./dist/img/partners/gazprom.png" alt="partner">
-            <img src="./dist/img/partners/rosneft.png" alt="partner">
-            <img src="./dist/img/partners/tatneft.png" alt="partner">
-          </div>
-          <div class="partners__dots">
-            <span class="active-dot"></span>
-            <span></span>
-            <span></span>
+            <div class="partners__items-img">
+              <img src="./dist/img/partners/lukoil.png" alt="partner">
+            </div>
+            <div class="partners__items-img">
+              <img src="./dist/img/partners/gazprom.png" alt="partner">
+            </div>
+            <div class="partners__items-img">
+              <img src="./dist/img/partners/rosneft.png" alt="partner">
+            </div>
+            <div class="partners__items-img">
+              <img src="./dist/img/partners/tatneft.png" alt="partner">
+            </div>
+            <div class="partners__items-img">
+              <img src="./dist/img/partners/lukoil.png" alt="partner">
+            </div>
+            <div class="partners__items-img">
+              <img src="./dist/img/partners/gazprom.png" alt="partner">
+            </div>
+            <div class="partners__items-img">
+              <img src="./dist/img/partners/rosneft.png" alt="partner">
+            </div>
+            <div class="partners__items-img">
+              <img src="./dist/img/partners/tatneft.png" alt="partner">
+            </div>
           </div>
         </div>
       </div>
@@ -409,15 +438,31 @@
           <div class="reviews__top">
             <h2 class="sections-subtitle">Отзывы</h2>
             <div class="reviews__buttons slider__buttons">
-              <button>
+              <!-- <button>
                 <img src="./dist/img/icons/arrow-prev.svg" alt="arrow-prev">
               </button>
               <button>
                 <img src="./dist/img/icons/arrow-next.svg" alt="arrow-next">
-              </button>
+              </button> -->
             </div>
           </div>
           <div class="reviews__body">
+            <div class="reviews__item person">
+              <div class="person__about">
+                <span class="person__name">Гусев Вячеслав</span>
+                <span class="person__company">Индивидуальный предприниматель</span>
+                <p class="person__comment">Velit, lectus sit urna tincidunt augue. Cursus vulputate pellentesque faucibus euismod. Diam pharetra, non, ut integer dui feugiat porttitor at. Non, dignissim enim viverra fringilla sit. Etiam justo a dignissim sociis vitae, nisi, justo, feugiat.</p>
+              </div>
+              <a class="person__descr" href="#">Подробнее</a>
+            </div>
+            <div class="reviews__item person">
+              <div class="person__about">
+                <span class="person__name">Зеленов Евгений</span>
+                <span class="person__company">Гененеральный директор трансопртной компании</span>
+                <p class="person__comment">Mi auctor sit habitasse sed mi cras ullamcorper massa sed. In augue fames sodales pretium, at scelerisque. Pulvinar a mattis pharetra mi, aliquet sem tristique lorem eleifend. Nisl, scelerisque ut libero, pellentesque. Tincidunt vestibulum volutpat lacus imperdiet morbi vulputate tristique facilisi.</p>
+              </div>
+              <a class="person__descr" href="#">Подробнее</a>
+            </div>
             <div class="reviews__item person">
               <div class="person__about">
                 <span class="person__name">Гусев Вячеслав</span>
@@ -513,6 +558,9 @@
       </div>
     </div>
   </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="dist/js/main.min.js"></script>
 </body>
 </html>

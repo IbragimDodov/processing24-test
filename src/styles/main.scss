@@ -48,6 +48,15 @@ body {
   color: #ffffff;
 
   background: #098fcf;
+  transition: 0.5s;
+
+  &:hover {
+    color: #098fcf;
+    background: #ffffff;
+    // border: 1px solid #098fcf;
+
+    transition: 0.5s;
+  }
 }
 
 section {
@@ -99,6 +108,18 @@ section {
     &:last-child {
       margin-right: 0;
     }
+  }
+}
+
+.slick-next,
+.slick-prev {
+  background-color: transparent;
+  border: 1px solid #d5d5d5;
+  z-index: 555;
+
+  &:hover {
+    background-color: #098fcf;
+    transition: 0.5s;
   }
 }
 
