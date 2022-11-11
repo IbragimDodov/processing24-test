@@ -39,7 +39,7 @@
   }
 
   .slick-initialized .slick-slide {
-    justify-content: center;
+    justify-content: space-between;
     display: flex;
   }
 
@@ -90,5 +90,34 @@
     font-size: 13px;
     line-height: 16px;
     color: #098fcf;
+  }
+}
+
+@media (max-width: 768px) {
+  .person__comment {
+    font-size: 14px;
+    line-height: 110%;
+  }
+
+  .person__company {
+    margin-bottom: 15px !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .reviews {
+    padding: 30px 0;
+  }
+  .reviews__top {
+    margin-bottom: 25px;
+  }
+  .reviews .slick-prev {
+    top: -57px;
+  }
+  .reviews .slick-next {
+    top: -57px;
+  }
+  .reviews__btn {
+    margin-top: 15px;
   }
 }

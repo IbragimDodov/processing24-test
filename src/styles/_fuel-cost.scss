@@ -62,3 +62,43 @@
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+@media (max-width: 320px) {
+  .fuel-cost h2 {
+    margin-bottom: 20px;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .fuel-cost table td {
+    text-align: center;
+    padding: 10px 4px 10px 4px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .fuel-cost table th:first-child {
+    padding-left: 0px;
+  }
+
+  .fuel-cost table th {
+    padding: 10px 0 10px 6px;
+    font-size: 8px;
+    line-height: 10px;
+  }
+
+  .td-title-style {
+    padding-left: 0px;
+    font-size: 16px !important;
+    line-height: 18px !important;
+    width: 60px;
+  }
+
+  .table-middle {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}

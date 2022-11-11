@@ -46,3 +46,12 @@
     justify-content: space-between;
   }
 }
+
+@media (max-width: 320px) {
+  .certificates .slick-prev {
+    top: -36px;
+  }
+  .certificates .slick-next {
+    top: -36px;
+  }
+}

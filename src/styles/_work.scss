@@ -62,3 +62,30 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .work__item-descr h4 {
+    line-height: 21px;
+  }
+
+  .work__item-descr p {
+    line-height: 120%;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 320px) {
+  .work h2 {
+    margin-bottom: 30px;
+  }
+  .work__inner {
+    flex-direction: column;
+    column-gap: 0px;
+    row-gap: 20px;
+  }
+  .work__item {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+}

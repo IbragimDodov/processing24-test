@@ -97,6 +97,10 @@
     a {
       color: #505050;
       font-weight: 600;
+
+      &:hover {
+        color: #076795;
+      }
     }
   }
 
@@ -157,5 +161,113 @@
         right: 3px;
       }
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer__form-input {
+    width: 21%;
+  }
+
+  .footer__form-btn {
+    width: 25%;
+  }
+
+  .footer__bottom-item .footer__logo {
+    width: 180px;
+  }
+
+  .footer__bottom-item .footer__logo-text {
+    font-size: 10px;
+  }
+
+  .footer__nav {
+    width: 47%;
+  }
+
+  .footer__list {
+    column-gap: 20px;
+  }
+
+  .footer__list a {
+    font-size: 14px;
+  }
+
+  .footer__sale {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .footer__sale-tel {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 320px) {
+  .footer__top {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .footer__top-inner h2 {
+    margin-bottom: 13px;
+  }
+
+  .footer__top-inner span {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer__form-inner {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .footer__form-input {
+    width: 100%;
+  }
+
+  .footer__form-btn {
+    width: 100%;
+  }
+
+  .footer__form p,
+  .footer__form a {
+    font-size: 10px;
+  }
+
+  .footer__bottom {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .footer__bottom-inner {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .footer__bottom-item .footer__logo {
+    width: 220px;
+  }
+
+  .footer__nav {
+    width: 100%;
+  }
+
+  .footer__phone-block {
+    text-align: left;
+  }
+  .footer__sale {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .footer__sale-tel {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .footer__sticky-inner button {
+    display: none !important;
   }
 }

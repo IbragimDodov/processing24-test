@@ -111,3 +111,35 @@
   position: relative;
   top: -2px;
 }
+
+@media (max-width: 320px) {
+  .fuel-delivery {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .fuel-delivery__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    row-gap: 20px;
+    width: 100%;
+  }
+
+  .fuel-delivery__form {
+    width: 100%;
+  }
+
+  .total {
+    padding: 10px;
+  }
+  .fuel-delivery__total {
+    width: 100%;
+  }
+  .total__btn {
+    margin-top: 3px;
+    width: 100%;
+  }
+}

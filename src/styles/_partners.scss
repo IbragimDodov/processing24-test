@@ -44,3 +44,19 @@
     column-gap: 115px;
   }
 }
+
+@media (max-width: 320px) {
+  .partners h2 {
+    margin-bottom: 25px;
+  }
+
+  .slick-slider .slick-track,
+  .slick-slider .slick-list {
+    column-gap: 10px !important;
+  }
+
+  .partners .slick-dots {
+    column-gap: 15px;
+    margin-top: 25px;
+  }
+}
