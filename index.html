@@ -115,8 +115,8 @@
                 <label class="ordinary-label"> Ваше имя
                   <input class="ordinary-input" type="text" placeholder="Иван">
                 </label>
-                <label class="ordinary-label"> Номер телефона
-                  <input class="ordinary-input" type="tel" placeholder="+7 (___) ___-__-__">
+                <label data-phone-pattern class="ordinary-label"> Номер телефона
+                  <input id="phone" class="ordinary-input tel" type="tel" placeholder="+7 (___) ___-__-__">
                 </label>
               </div>
               <button class="btn fuel__form-btn">Заказать топливо</button>
@@ -279,7 +279,7 @@
               <input class="ordinary-input" type="text" placeholder="Иван">
             </label>
             <label class="ordinary-label"> Номер телефона
-              <input class="ordinary-input" type="tel" placeholder="+7 (___) ___-__-__">
+              <input data-phone-pattern class="ordinary-input" type="tel" placeholder="+7 (___) ___-__-__">
             </label>
           </form>
           <div class="fuel-delivery__total total">
@@ -420,28 +420,28 @@
           </div>
           <div class="certificates__bottom">
             <div class="certificates__item">
-              <img src="./dist/img/certificates/image-1.png" alt="sertificate">
+              <img data-lazy="dist/img/certificates/image-1.png" src="./dist/img/certificates/image-1.png" alt="sertificate">
             </div>
             <div class="certificates__item">
-              <img src="./dist/img/certificates/image-2.png" alt="sertificate">
+              <img data-lazy="dist/img/certificates/image-2.png" src="./dist/img/certificates/image-2.png" alt="sertificate">
             </div>
             <div class="certificates__item">
-              <img src="./dist/img/certificates/image-3.png" alt="sertificate">
+              <img data-lazy="dist/img/certificates/image-3.png" src="./dist/img/certificates/image-3.png" alt="sertificate">
             </div>
             <div class="certificates__item">
-              <img src="./dist/img/certificates/image-4.png" alt="sertificate">
+              <img data-lazy="dist/img/certificates/image-4.png" src="./dist/img/certificates/image-4.png" alt="sertificate">
             </div>
             <div class="certificates__item">
-              <img src="./dist/img/certificates/image-1.png" alt="sertificate">
+              <img data-lazy="dist/img/certificates/image-1.png" src="./dist/img/certificates/image-1.png" alt="sertificate">
             </div>
             <div class="certificates__item">
-              <img src="./dist/img/certificates/image-2.png" alt="sertificate">
+              <img data-lazy="dist/img/certificates/image-2.png" src="./dist/img/certificates/image-2.png" alt="sertificate">
             </div>
             <div class="certificates__item">
-              <img src="./dist/img/certificates/image-3.png" alt="sertificate">
+              <img data-lazy="dist/img/certificates/image-3.png" src="./dist/img/certificates/image-3.png" alt="sertificate">
             </div>
             <div class="certificates__item">
-              <img src="./dist/img/certificates/image-4.png" alt="sertificate">
+              <img data-lazy="dist/img/certificates/image-4.png" src="./dist/img/certificates/image-4.png" alt="sertificate">
             </div>
           </div>
         </div>
@@ -454,28 +454,28 @@
         <div class="partners__inner">
           <div class="partners__items">
             <div class="partners__items-img">
-              <img src="./dist/img/partners/lukoil.png" alt="partner">
+              <img data-lazy="dist/img/partners/lukoil.png" src="./dist/img/partners/lukoil.png" alt="partner">
             </div>
             <div class="partners__items-img">
-              <img src="./dist/img/partners/gazprom.png" alt="partner">
+              <img data-lazy="dist/img/partners/gazprom.png" src="./dist/img/partners/gazprom.png" alt="partner">
             </div>
             <div class="partners__items-img">
-              <img src="./dist/img/partners/rosneft.png" alt="partner">
+              <img data-lazy="dist/img/partners/rosneft.png" src="./dist/img/partners/rosneft.png" alt="partner">
             </div>
             <div class="partners__items-img">
-              <img src="./dist/img/partners/tatneft.png" alt="partner">
+              <img data-lazy="dist/img/partners/tatneft.png" src="./dist/img/partners/tatneft.png" alt="partner">
             </div>
             <div class="partners__items-img">
-              <img src="./dist/img/partners/lukoil.png" alt="partner">
+              <img data-lazy="dist/img/partners/lukoil.png" src="./dist/img/partners/lukoil.png" alt="partner">
             </div>
             <div class="partners__items-img">
-              <img src="./dist/img/partners/gazprom.png" alt="partner">
+              <img data-lazy="dist/img/partners/gazprom.png" src="./dist/img/partners/gazprom.png" alt="partner">
             </div>
             <div class="partners__items-img">
-              <img src="./dist/img/partners/rosneft.png" alt="partner">
+              <img data-lazy="dist/img/partners/rosneft.png" src="./dist/img/partners/rosneft.png" alt="partner">
             </div>
             <div class="partners__items-img">
-              <img src="./dist/img/partners/tatneft.png" alt="partner">
+              <img data-lazy="dist/img/partners/tatneft.png" src="./dist/img/partners/tatneft.png" alt="partner">
             </div>
           </div>
         </div>
@@ -548,7 +548,7 @@
           <form class="form footer__form">
             <div class="footer__form-inner">
               <input class="footer__form-input" type="text" placeholder="Ваше имя">
-              <input class="footer__form-input" type="tel" placeholder="Номер телефона">
+              <input data-phone-pattern class="footer__form-input" type="tel" placeholder="Номер телефона">
               <button class="btn footer__form-btn">Перезвоните мне</button>
             </div>
             <p>Нажимая на кнопку "Перезвоните мне" я соглашаюсь с
