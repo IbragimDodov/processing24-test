@@ -130,15 +130,6 @@ section {
   display: none;
 }
 
-.mobile-menu {
-  display: none;
-  position: absolute;
-  width: 90%;
-  left: 15px;
-  top: 60px;
-  z-index: 777;
-}
-
 .d-block {
   display: block;
 }
@@ -201,46 +192,34 @@ section {
     padding: 10px;
   }
 
-  .fuel__form-btn {
-    padding: 14px 55px 16px 55px;
-  }
-
-  .work__item-descr h4 {
-    font-size: 20px;
-    margin-bottom: 15px;
-  }
-
-  .work__item-descr .small-descr {
-    font-size: 10px;
-    margin-top: 10px;
-  }
-
-  .service__item {
-    width: 30%;
-  }
-
-  .service__inner {
-    justify-content: center;
-  }
-
-  .fuel {
-    margin-top: 40px !important;
-  }
-
   section {
     margin-top: 50px;
   }
 }
 
 @media (max-width: 320px) {
-  .fuel {
-    margin-top: 10px !important;
-  }
   section {
     margin-top: 10px;
   }
-  .header__descr {
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
 }
+
+// @media (max-width: 1024px) {
+// }
+
+// @media (max-width: 992px) {
+// }
+
+// @media (max-width: 768px) {
+// }
+
+// @media (max-width: 576px) {
+// }
+
+// @media (max-width: 425px) {
+// }
+
+// @media (max-width: 375px) {
+// }
+
+// @media (max-width: 320px) {
+// }

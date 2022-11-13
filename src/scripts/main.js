@@ -38,6 +38,13 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       },
       {
+        breakpoint: 577,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
         breakpoint: 321,
         settings: {
           slidesToShow: 1,
@@ -60,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       },
       {
-        breakpoint: 321,
+        breakpoint: 577,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
@@ -84,7 +91,15 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       },
       {
-        breakpoint: 321,
+        breakpoint: 577,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 426,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,

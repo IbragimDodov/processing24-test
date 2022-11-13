@@ -16,7 +16,7 @@
   }
 
   &__item {
-    width: 33.33%;
+    width: 33%;
     max-width: 353px;
     padding: 20px;
 
@@ -47,6 +47,16 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .service__item {
+    width: 30%;
+  }
+
+  .service__inner {
+    justify-content: center;
+  }
+}
+
 @media (max-width: 768px) {
   .service__inner {
     column-gap: 20px;
@@ -55,6 +65,8 @@
 
   .service__item {
     column-gap: 10px;
+    padding: 5px;
+    height: 145px;
   }
 
   .service__item img {
@@ -63,7 +75,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 576px) {
   .service {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -81,5 +93,7 @@
 
   .service__item {
     width: 100% !important;
+    max-width: 100%;
+    height: auto;
   }
 }

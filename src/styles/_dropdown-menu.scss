@@ -36,7 +36,8 @@
     top: 100%;
     display: none;
     padding-top: 20px;
-    background: #f9f9f9;
+    background: #f9f9f9 !important;
+    z-index: 222;
 
     &:last-child {
       padding-top: 0;

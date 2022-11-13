@@ -45,7 +45,11 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 425px) {
+  .partners__items-img.slick-slide.slick-current.slick-active {
+    display: flex;
+    justify-content: center;
+  }
   .partners h2 {
     margin-bottom: 25px;
   }

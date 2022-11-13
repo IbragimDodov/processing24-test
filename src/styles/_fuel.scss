@@ -68,7 +68,20 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 960px) {
+  .fuel {
+    margin-top: 40px !important;
+  }
+  .fuel__form-btn {
+    padding: 14px 55px 16px 55px;
+  }
+}
+
+@media (max-width: 576px) {
+  .fuel {
+    margin-top: 10px !important;
+  }
+
   .fuel__title {
     font-size: 43px;
     line-height: 45px;
