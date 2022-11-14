@@ -1150,7 +1150,7 @@ section:first-child {
   align-items: flex-start;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 100px;
+  height: 120px;
   -moz-column-gap: 50px;
   column-gap: 50px;
   row-gap: 5px;
