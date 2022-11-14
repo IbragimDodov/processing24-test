@@ -51,7 +51,8 @@
   line-height: 29px !important;
   color: #ffffff !important;
   border-left: 1px solid #098fcf !important;
-  width: 163px;
+  width: 14.55%;
+  max-width: 163px;
 }
 
 .bl {
@@ -63,19 +64,27 @@
   margin-bottom: 20px;
 }
 
+@media (max-width: 768px) {
+  .fuel-cost table td {
+    padding: 10px 5px;
+
+    &.td-title-style {
+      max-width: 107px;
+      min-width: 90px;
+    }
+  }
+}
+
 @media (max-width: 576px) {
   .fuel-cost table th:first-child {
     padding-left: 5px;
   }
   .fuel-cost table th {
-    padding: 15px 0 15px 20px;
+    padding: 15px 0 15px 11px;
   }
   table {
     display: block;
     overflow-x: auto;
-  }
-  .fuel-cost table td {
-    padding: 16px 15px 16px 20px;
   }
 }
 
@@ -93,7 +102,7 @@
       padding-left: 0px;
       font-size: 16px !important;
       line-height: 18px !important;
-      width: 60px !important;
+      min-width: 60px;
     }
   }
 
@@ -112,15 +121,5 @@
   .table-middle {
     margin-top: 10px;
     margin-bottom: 10px;
-  }
-}
-
-.fuel-cost table td {
-  padding: 10px 12px 10px 12px;
-}
-
-@media (max-width: 320px) {
-  .fuel-cost table td {
-    padding: 10px 4px 10px 4px;
   }
 }
